@@ -39,11 +39,10 @@ export default function Navbar() {
       >
         <motion.nav 
           layout
-          transition={{ type: "spring", stiffness: 200, damping: 25 }}
-          className="transition-colors duration-500 liquid-glass rounded-full px-2 py-2 overflow-hidden"
+          className="transition-colors duration-300 liquid-glass rounded-full px-2 py-2 overflow-hidden"
           style={{ borderRadius: 9999 }}
         >
-          <motion.div layout transition={{ type: "spring", stiffness: 200, damping: 25 }} className="relative flex items-center gap-1">
+          <motion.div layout className="relative flex items-center gap-1">
             <AnimatePresence mode="popLayout">
               {navItems.map(({ label, id, icon: Icon }) => {
                 const isActive = activeId === id;
@@ -55,10 +54,10 @@ export default function Navbar() {
                   <motion.div
                     layout
                     key={id}
-                    initial={{ opacity: 0, scale: 0.85, filter: "blur(4px)" }}
+                    initial={{ opacity: 0, scale: 0.8, filter: "blur(4px)" }}
                     animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                    exit={{ opacity: 0, scale: 0.85, filter: "blur(4px)" }}
-                    transition={{ type: "spring", stiffness: 200, damping: 22 }}
+                    exit={{ opacity: 0, scale: 0.8, filter: "blur(4px)" }}
+                    transition={{ type: "spring", stiffness: 400, damping: 28 }}
                   >
                     <Magnetic>
                       <a
