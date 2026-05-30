@@ -46,7 +46,7 @@ export default function Contact() {
               href={contact.href}
               target={contact.external ? '_blank' : undefined}
               rel={contact.external ? 'noopener noreferrer' : undefined}
-              className="group flex flex-1 items-center justify-between rounded-2xl border px-6 py-5 transition-all duration-300 transform-gpu border-glass-border bg-glass backdrop-blur-lg hover:-translate-y-1 hover:border-border-mid hover:bg-card hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
+              className="group flex flex-1 items-center justify-between rounded-2xl border px-6 py-5 transition-all duration-300 transform-gpu border-glass-border bg-glass backdrop-blur-lg md:hover:-translate-y-1 md:hover:border-border-mid md:hover:bg-card md:hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
             >
               <div className="flex flex-col gap-1">
                 <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.1em] text-text-faint">

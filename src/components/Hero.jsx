@@ -38,10 +38,10 @@ export default function Hero() {
           <motion.h1 variants={item} className="font-sans text-[clamp(3rem,9vw,5rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-text-primary group">
             Raihan
             <br />
-            <span className="font-serif italic font-normal text-accent relative inline-block transition-transform duration-500 hover:scale-105">
+            <span className="font-serif italic font-normal text-accent relative inline-block transition-transform duration-500 md:hover:scale-105">
               Wisteria
-              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-gradient-to-r from-transparent via-accent to-transparent transition-all duration-500 group-hover:w-full" />
-              <span className="absolute inset-0 bg-accent/20 blur-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100 mix-blend-screen" />
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-gradient-to-r from-transparent via-accent to-transparent transition-all duration-500 md:group-hover:w-full" />
+              <span className="absolute inset-0 bg-accent/20 blur-xl opacity-0 transition-opacity duration-500 md:group-hover:opacity-100 mix-blend-screen" />
             </span>
           </motion.h1>
         </div>
