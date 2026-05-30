@@ -15,16 +15,8 @@ const navItems = [
 
 export default function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const sectionIds = useMemo(() => navItems.map(item => item.id), []);
   const activeId = useScrollSpy(sectionIds, 150);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.matchMedia('(max-width: 768px)').matches);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
 
   const handleScrollTo = (e, id) => {
     e.preventDefault();
@@ -47,14 +39,14 @@ export default function Navbar() {
       >
         <motion.nav 
           layout
-          className="transition-colors duration-300 transform-gpu liquid-glass rounded-full px-2 py-2 shadow-2xl"
+          className="transition-colors duration-300 transform-gpu liquid-glass rounded-full px-2 py-2 shadow-2xl overflow-hidden"
           style={{ borderRadius: 9999 }}
         >
           <motion.div layout className="relative flex items-center gap-1">
             <AnimatePresence mode="popLayout">
               {navItems.map(({ label, id, icon: Icon }) => {
                 const isActive = activeId === id;
-                const isVisible = isHovered || isActive || isMobile;
+                const isVisible = isHovered || isActive;
 
                 if (!isVisible) return null;
 
