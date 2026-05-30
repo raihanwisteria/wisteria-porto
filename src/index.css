@@ -87,12 +87,13 @@ body {
 /* ── Liquid Glass (VisionOS style) ───────── */
 .liquid-glass {
   position: relative;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1),
-              inset 0 -1px 2px rgba(0, 0, 0, 0.1);
+              inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+              0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .liquid-glass::before {
@@ -101,6 +102,6 @@ body {
   inset: 0;
   pointer-events: none;
   border-radius: inherit;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 50%, transparent 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
   z-index: 0;
 }
