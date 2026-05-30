@@ -39,7 +39,7 @@ export default function Navbar() {
       >
         <motion.nav 
           layout
-          className="transition-all duration-300 rounded-full px-2 py-2 border border-white/10 bg-white/5 backdrop-blur-md backdrop-saturate-150 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]"
+          className="transition-colors duration-300 liquid-glass rounded-full px-2 py-2"
           style={{ borderRadius: 9999 }}
         >
           <motion.div layout className="relative flex items-center gap-1">
