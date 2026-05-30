@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useMemo, useState } from 'react';
 import { cn } from '../lib/utils';
 import { useScrollSpy } from '../hooks/useScrollSpy';
 import Magnetic from './ui/Magnetic';
